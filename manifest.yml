@@ -3,5 +3,4 @@ applications:
 - name: sampleGradleApp
   memory: 512M
   host: sampleGradleApp
-  path: target/gs-spring-boot-0.1.0.jar
   
