@@ -1,9 +1,7 @@
 ---
 applications:
-- name: pcfsamplegradle
+- name: springboot-first
   memory: 512M
-  host: pcfsamplegradle
-  domain: cfapps.io
-  env:
-     JAVA_OPTS: -Dspring.profiles.active=cloud
+  host: springboot-first
+  path: target/gs-spring-boot-0.1.0.jar
   
