@@ -1,0 +1,9 @@
+---
+applications:
+- name: pcfsamplegradle
+  memory: 512M
+  host: pcfsamplegradle
+  domain: cfapps.io
+  env:
+     JAVA_OPTS: -Dspring.profiles.active=cloud
+  
