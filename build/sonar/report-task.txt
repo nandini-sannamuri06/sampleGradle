@@ -1,0 +1,5 @@
+projectKey=SampleGradle
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/SampleGradle
+ceTaskId=AVn0O15Uxh32c9ghV3d_
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVn0O15Uxh32c9ghV3d_
