@@ -3,5 +3,5 @@ applications:
 - name: sampleGradleApp
   memory: 512M
   host: sampleGradleApp
-  path: ./sampleGradleApp-1.0.0.BUILD-SNAPSHOT.war
+  path: ${project}/build/libs/sampleGradle.war
   
