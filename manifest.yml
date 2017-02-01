@@ -4,4 +4,7 @@ applications:
   memory: 512M
   host: sampleGradleApp
   path: ./build/libs/sampleGradle.war
+  buildpack: java_buildpack
+  env:
+    JBP_CONFIG_OPENJDK: 'verion: 1.8.+'
   
