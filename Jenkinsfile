@@ -10,7 +10,7 @@ pipeline {
         stage('Build'){
             steps{
               gradle{
-                  tasks('clean','build')
+                  tasks('clean','build','sonar')
               }
                echo 'build Done'
             }
