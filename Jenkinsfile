@@ -9,7 +9,9 @@ pipeline {
         }
         stage('Build'){
             steps{
-               sh 'gradle clean build'
+              gradle{
+                  tasks('clean','build')
+              }
                echo 'build Done'
             }
         }
@@ -21,6 +23,7 @@ pipeline {
     }
     post { 
         always { 
+        mail to:"nsuggula@nisum.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Yay, we passed."
         echo 'SendMail'
         }
         success{
