@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build'){
             steps{
-                gradleBuild: 'build.gradle', tasks: 'clean build sonar', buildInfo: buildInfo
+                gradleBuild: tasks: 'clean build sonar', buildInfo: buildInfo
                echo 'build Done'
             }
         }
