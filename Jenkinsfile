@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build'){
             steps{
-                rtGradle.run buildFile: 'build.gradle', tasks: 'clean build sonar', buildInfo: buildInfo
+               sh 'gradle clean build sonar'
                echo 'build Done'
             }
         }
